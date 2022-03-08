@@ -22,7 +22,7 @@ const Navbar = () => {
                 {["Marché", "Echanges", "Coures", "Port-feullies"].map( (item, id) => (
                     <NavItem key={item + id} title={item} />
                 ) )}
-                <li className="bg-[#2955f3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2440b0]">Login</li> 
+                <li className="bg-[#2955f3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2440b0]">Se Connecter</li> 
             </ul>
             <div className="flex relative">
                 {toggleMenu ? 
@@ -32,8 +32,8 @@ const Navbar = () => {
                     
                 }
                 {toggleMenu && (
-                    <ul className="z-10 flex top-0 right-2 p-3 w-[70vw] h-screen shadow-2xl md:hidden list-none flex flex-col justify-start items-end rounded-md blue-glassmorphism text-white animate-slide">
-                        <li className="text-xl w-full my-2">
+                    <ul className="z-10 fixed top-0 right-2 p-3 w-[70vw] h-screen shadow-2xl md:hidden list-none flex flex-col justify-start items-end rounded-md blue-glassmorphism text-white animate-slide">
+                        <li className="text-xl relative left-[18rem] w-full my-2">
                             <AiOutlineClose onClick={() => setToggleMenu(false)}/>
                         </li>
                         {["Marché", "Echanges", "Coures", "Port-feullies"].map( (item, id) => (
