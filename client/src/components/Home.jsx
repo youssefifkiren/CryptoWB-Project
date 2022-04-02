@@ -29,7 +29,7 @@ const Home = () => {
             <div className="flex mf:flex-row flex-col items-start justify-between md:p-20 py-12 px-4">
                 <div className="flex flex-1 justify-start flex-col mf:mr-10">
                     <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1">Envoyer Crypto <br />à travers le monde</h1>
-                    <p className="text-left text-white mt-5 font-light w-9/12 text-base">explorez le monde de la cryptographie, achetez et vendez facilement Crypto avec cryptoWB</p>
+                    <p className="text-left text-white mt-5 font-light w-9/12 text-base">explorez le monde de la currency, achetez et vendez facilement Crypto avec cryptoWB</p>
                     <button
                     type="button"
                     onClick={ConnectMeta}
@@ -66,7 +66,7 @@ const Home = () => {
                         <Inp name="keyword" type="text" plchldr="Mot cle" hander={() => {}}/>
                         <Inp name="msg" type="text" plchldr="Entrer un message" hander={() => {}}/>
                         <div className="h-[1px] w-full bg-gray-400 my-2"/>
-                        {false ? (
+                        {true ? (
                             <Loader/>
                         ) : (
                             <button type="button" onClick={SubmitTrans} className="text-white w-full mt-2 border-[1px] p-2 border-[#02a19f] rounded-full cursor-pointer">Envoyer</button>
